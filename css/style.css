@@ -517,10 +517,12 @@ span:after {
 
 .goods-swiper {
   margin-top: 50px;
+  display: none;
 }
 
 .new-goods__watches {
   display: grid;
+  justify-items: center;
   margin-top: 80px;
   grid-template-columns: repeat(4, auto);
   gap: 10px;
@@ -718,6 +720,9 @@ span:after {
   .article__content {
     margin: 0 75px 75px 75px;
   }
+  .new-goods__watches {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -763,6 +768,9 @@ span:after {
 }
 
 @media screen and (max-width: 830px) {
+  .new-goods__watches {
+    grid-template-columns: repeat(2, auto);
+  }
   .footer-line {
     padding-bottom: 50px;
   }
@@ -833,6 +841,12 @@ span:after {
   }
   .article__text {
     margin-bottom: 10px;
+  }
+  .new-goods__watches {
+    display: none;
+  }
+  .goods-swiper {
+    display: block;
   }
 }
 
